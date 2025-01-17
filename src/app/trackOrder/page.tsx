@@ -13,20 +13,20 @@ interface OrderStatus {
 const TrackOrderPage: React.FC = () => {
   const [orderStatus, setOrderStatus] = useState<OrderStatus | null>(null);
   const searchParams = useSearchParams();
-  const orderId = searchParams.get('orderId');
+  const orderId = searchParams.get("orderId");
 
   useEffect(() => {
-    const fetchOrderStatus = () => {
-      const now = new Date();
-      const estimatedDelivery = new Date(now.getTime() + 20 * 60000); // 20 minutes from now
-      const mockStatus: OrderStatus = {
-        status: 'shipped',
-        estimatedDelivery: estimatedDelivery,
-      };
-      setOrderStatus(mockStatus);
-    };
-
     if (orderId) {
+      const fetchOrderStatus = () => {
+        const now = new Date();
+        const estimatedDelivery = new Date(now.getTime() + 20 * 60000); 
+        const mockStatus: OrderStatus = {
+          status: 'shipped',
+          estimatedDelivery: estimatedDelivery,
+        };
+        setOrderStatus(mockStatus);
+      };
+
       fetchOrderStatus();
     }
   }, [orderId]);
@@ -43,7 +43,7 @@ const TrackOrderPage: React.FC = () => {
         }
       };
 
-      const intervalId = setInterval(checkDeliveryStatus, 1000); // Check every second
+      const intervalId = setInterval(checkDeliveryStatus, 1000);
 
       return () => clearInterval(intervalId);
     }
@@ -63,7 +63,13 @@ const TrackOrderPage: React.FC = () => {
   }
 
   if (!orderStatus) {
-    return <S.Container><S.LoadingSpinner><Loader size={40} /></S.LoadingSpinner></S.Container>;
+    return (
+      <S.Container>
+        <S.LoadingSpinner>
+          <Loader size={40} />
+        </S.LoadingSpinner>
+      </S.Container>
+    );
   }
 
   return (
@@ -71,15 +77,21 @@ const TrackOrderPage: React.FC = () => {
       <S.Title>Status do Pedido #{orderId}</S.Title>
       <S.StatusContainer>
         <S.StatusItem $active={orderStatus.status === 'processing' || orderStatus.status === 'shipped' || orderStatus.status === 'delivered'}>
-          <S.StatusIcon $active={orderStatus.status === 'processing' || orderStatus.status === 'shipped' || orderStatus.status === 'delivered'}><Package size={24} /></S.StatusIcon>
+          <S.StatusIcon $active={orderStatus.status === 'processing' || orderStatus.status === 'shipped' || orderStatus.status === 'delivered'}>
+            <Package size={24} />
+          </S.StatusIcon>
           <S.StatusText>Processando</S.StatusText>
         </S.StatusItem>
         <S.StatusItem $active={orderStatus.status === 'shipped' || orderStatus.status === 'delivered'}>
-          <S.StatusIcon $active={orderStatus.status === 'shipped' || orderStatus.status === 'delivered'}><Truck size={24} /></S.StatusIcon>
+          <S.StatusIcon $active={orderStatus.status === 'shipped' || orderStatus.status === 'delivered'}>
+            <Truck size={24} />
+          </S.StatusIcon>
           <S.StatusText>Enviado</S.StatusText>
         </S.StatusItem>
         <S.StatusItem $active={orderStatus.status === 'delivered'}>
-          <S.StatusIcon $active={orderStatus.status === 'delivered'}><CheckCircle size={24} /></S.StatusIcon>
+          <S.StatusIcon $active={orderStatus.status === 'delivered'}>
+            <CheckCircle size={24} />
+          </S.StatusIcon>
           <S.StatusText>Entregue</S.StatusText>
         </S.StatusItem>
       </S.StatusContainer>
@@ -95,5 +107,12 @@ const TrackOrderPage: React.FC = () => {
   );
 };
 
-export default TrackOrderPage;
+const TrackOrderPageWrapper: React.FC = () => {
+  return (
+    <React.Suspense fallback={<div>Carregando...</div>}>
+      <TrackOrderPage />
+    </React.Suspense>
+  );
+};
 
+export default TrackOrderPageWrapper;

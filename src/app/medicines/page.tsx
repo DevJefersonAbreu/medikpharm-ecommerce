@@ -93,6 +93,14 @@ const medicamentos = [
     price: 20.75,
     rating: 5,
     category: "Analgésicos"
+  },
+  {
+    id: 112,
+    image: "/assets/imagesMedicines/medicamento.png",
+    name: "Neosaldina 30 drágeas",
+    price: 20.75,
+    rating: 5,
+    category: "Analgésicos"
   }
 ];
 

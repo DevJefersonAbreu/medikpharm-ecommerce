@@ -3,15 +3,15 @@ import React from "react";
 import * as S from "./styles";
 import { Star } from "lucide-react";
 
-// Ajuste na importação do Badge
-import { Badge } from "@/components/ui/badge"; // Alterado para importar como default
+
+import { Badge } from "@/components/ui/badge"; 
 
 
-// Lista de produtos
+
 export const products = [
   {
     id: 1,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesProductCard/mascara.png",
     name: "Máscara N95",
     price: 59.9,
     rating: 5,
@@ -19,7 +19,7 @@ export const products = [
   },
   {
     id: 2,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesProductCard/vitamina.png",
     name: "Vitamina C",
     price: 45.9,
     rating: 4,
@@ -27,7 +27,7 @@ export const products = [
   },
   {
     id: 3,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesProductCard/gel.png/",
     name: "Álcool em Gel",
     price: 15.9,
     rating: 5,
@@ -35,7 +35,7 @@ export const products = [
   },
   {
     id: 4,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesProductCard/termometro.png",
     name: "Termômetro Digital",
     price: 89.9,
     rating: 4,
@@ -43,7 +43,7 @@ export const products = [
   },
   {
     id: 5,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesProductCard/luva.png",
     name: "Luvas Descartáveis",
     price: 29.9,
     rating: 4,
@@ -51,7 +51,7 @@ export const products = [
   },
   {
     id: 6,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesProductCard/protetor.png",
     name: "Protetor Facial",
     price: 49.9,
     rating: 5,
@@ -59,7 +59,7 @@ export const products = [
   },
   {
     id: 7,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesProductCard/oximetro.png",
     name: "Oxímetro",
     price: 199.9,
     rating: 5,
@@ -67,7 +67,7 @@ export const products = [
   },
   {
     id: 8,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesProductCard/bandagem.png",
     name: "Bandagem",
     price: 12.9,
     rating: 4,
@@ -75,7 +75,7 @@ export const products = [
   },
   {
     id: 9,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesProductCard/vitamina.png",
     name: "Vitamina D",
     price: 39.9,
     rating: 5,
@@ -83,15 +83,31 @@ export const products = [
   },
   {
     id: 10,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesProductCard/seringa.png",
     name: "Seringa",
     price: 2.9,
     rating: 4,
     category: "Equipamentos",
   },
+  {
+    id: 11,
+    image: "/assets/imagesProductCard/mascara.png",
+    name: "Máscara N95",
+    price: 59.9,
+    rating: 5,
+    category: "Proteção",
+  },
+  {
+    id: 12,
+    image: "/assets/imagesProductCard/vitamina.png",
+    name: "Vitamina C",
+    price: 45.9,
+    rating: 4,
+    category: "Vitaminas",
+  },
 ];
 
-// Definição das props do componente ProductCard
+
 interface ProductCardProps {
   id: number;
   image: string;
@@ -104,7 +120,7 @@ interface ProductCardProps {
   onRemoveFromCart: () => void;
 }
 
-// Componente ProductCard
+
 const ProductCard: React.FC<ProductCardProps> = ({
   image,
   name,
@@ -119,7 +135,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
     <S.Container>
       <S.ImageWrapper>
         <S.Image src={image} alt={name} />
-        {/* Uso do Badge para exibir a categoria */}
         <Badge>{category}</Badge>
       </S.ImageWrapper>
       <S.Content>

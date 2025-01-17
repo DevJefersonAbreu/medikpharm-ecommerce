@@ -8,7 +8,7 @@ import { useCart } from "@/components/contexts/cartContext";
 const injecoes = [
   {
     id: 201,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesInjections/injecao.png",
     name: "Insulina Regular",
     price: 45.90,
     rating: 5,
@@ -16,7 +16,7 @@ const injecoes = [
   },
   {
     id: 202,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesInjections/injecao.png",
     name: "Vitamina B12",
     price: 30.50,
     rating: 4,
@@ -24,7 +24,7 @@ const injecoes = [
   },
   {
     id: 203,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesInjections/injecao.png",
     name: "Penicilina Benzatina",
     price: 35.75,
     rating: 4,
@@ -32,7 +32,7 @@ const injecoes = [
   },
   {
     id: 204,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesInjections/injecao.png",
     name: "Dexametasona",
     price: 28.90,
     rating: 5,
@@ -40,7 +40,7 @@ const injecoes = [
   },
   {
     id: 205,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesInjections/injecao.png",
     name: "Heparina",
     price: 52.60,
     rating: 5,
@@ -48,7 +48,7 @@ const injecoes = [
   },
   {
     id: 206,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesInjections/injecao.png",
     name: "Adrenalina",
     price: 40.30,
     rating: 4,
@@ -56,7 +56,7 @@ const injecoes = [
   },
   {
     id: 207,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesInjections/injecao.png",
     name: "Morfina",
     price: 65.90,
     rating: 5,
@@ -64,7 +64,7 @@ const injecoes = [
   },
   {
     id: 208,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesInjections/injecao.png",
     name: "Diclofenaco",
     price: 22.80,
     rating: 4,
@@ -72,7 +72,7 @@ const injecoes = [
   },
   {
     id: 209,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesInjections/injecao.png",
     name: "Dipirona",
     price: 18.50,
     rating: 4,
@@ -80,7 +80,23 @@ const injecoes = [
   },
   {
     id: 210,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesInjections/injecao.png",
+    name: "Complexo B",
+    price: 25.75,
+    rating: 5,
+    category: "Injeções"
+  },
+  {
+    id: 211,
+    image: "/assets/imagesInjections/injecao.png",
+    name: "Dipirona",
+    price: 18.50,
+    rating: 4,
+    category: "Injeções"
+  },
+  {
+    id: 212,
+    image: "/assets/imagesInjections/injecao.png",
     name: "Complexo B",
     price: 25.75,
     rating: 5,

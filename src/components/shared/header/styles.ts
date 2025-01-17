@@ -1,5 +1,4 @@
-import styled, { css, keyframes } from "styled-components";
-import { Search, MapPin, ShoppingCart, Clock } from 'lucide-react';
+import styled, {  keyframes } from "styled-components";
 
 const pulse = keyframes`
   0% {
@@ -160,6 +159,7 @@ export const LogoText = styled.h1`
   letter-spacing: 1px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   background: linear-gradient(45deg, #0066cc, #00ccff);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 

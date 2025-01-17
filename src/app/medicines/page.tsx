@@ -8,7 +8,7 @@ import { useCart } from "@/components/contexts/cartContext";
 const medicamentos = [
   {
     id: 101,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesMedicines/medicamento.png",
     name: "Paracetamol 500mg",
     price: 15.90,
     rating: 4,
@@ -16,7 +16,7 @@ const medicamentos = [
   },
   {
     id: 102,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesMedicines/medicamento.png",
     name: "Ibuprofeno 400mg",
     price: 18.50,
     rating: 5,
@@ -24,7 +24,7 @@ const medicamentos = [
   },
   {
     id: 103,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesMedicines/medicamento.png",
     name: "Omeprazol 20mg",
     price: 25.90,
     rating: 4,
@@ -32,7 +32,7 @@ const medicamentos = [
   },
   {
     id: 104,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesMedicines/medicamento.png",
     name: "Dipirona 500mg",
     price: 12.75,
     rating: 4,
@@ -40,7 +40,7 @@ const medicamentos = [
   },
   {
     id: 105,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesMedicines/medicamento.png",
     name: "Amoxicilina 500mg",
     price: 35.60,
     rating: 5,
@@ -48,7 +48,7 @@ const medicamentos = [
   },
   {
     id: 106,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesMedicines/medicamento.png",
     name: "Loratadina 10mg",
     price: 22.30,
     rating: 4,
@@ -56,7 +56,7 @@ const medicamentos = [
   },
   {
     id: 107,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesMedicines/medicamento.png",
     name: "Dorflex 36 comprimidos",
     price: 19.90,
     rating: 5,
@@ -64,7 +64,7 @@ const medicamentos = [
   },
   {
     id: 108,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesMedicines/medicamento.png",
     name: "Buscopan 10mg",
     price: 16.80,
     rating: 4,
@@ -72,7 +72,7 @@ const medicamentos = [
   },
   {
     id: 109,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesMedicines/medicamento.png",
     name: "Rivotril 2mg",
     price: 28.50,
     rating: 4,
@@ -80,7 +80,15 @@ const medicamentos = [
   },
   {
     id: 110,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesMedicines/medicamento.png",
+    name: "Neosaldina 30 drágeas",
+    price: 20.75,
+    rating: 5,
+    category: "Analgésicos"
+  },
+  {
+    id: 111,
+    image: "/assets/imagesMedicines/medicamento.png",
     name: "Neosaldina 30 drágeas",
     price: 20.75,
     rating: 5,

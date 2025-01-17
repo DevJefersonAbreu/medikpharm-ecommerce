@@ -8,7 +8,7 @@ import { useCart } from "@/components/contexts/cartContext";
 const equipamentos = [
   {
     id: 401,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesEquipment/equipamento.png",
     name: "Estetoscópio",
     price: 189.90,
     rating: 5,
@@ -16,7 +16,7 @@ const equipamentos = [
   },
   {
     id: 402,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesEquipment/equipamento.png",
     name: "Otoscópio",
     price: 259.50,
     rating: 4,
@@ -24,7 +24,7 @@ const equipamentos = [
   },
   {
     id: 403,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesEquipment/equipamento.png",
     name: "Esfigmomanômetro",
     price: 129.75,
     rating: 5,
@@ -32,7 +32,7 @@ const equipamentos = [
   },
   {
     id: 404,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesEquipment/equipamento.png",
     name: "Oxímetro de Dedo",
     price: 99.90,
     rating: 4,
@@ -40,7 +40,7 @@ const equipamentos = [
   },
   {
     id: 405,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesEquipment/equipamento.png",
     name: "Termômetro Digital",
     price: 39.60,
     rating: 5,
@@ -48,7 +48,7 @@ const equipamentos = [
   },
   {
     id: 406,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesEquipment/equipamento.png",
     name: "Balança Digital",
     price: 89.30,
     rating: 4,
@@ -56,7 +56,7 @@ const equipamentos = [
   },
   {
     id: 407,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesEquipment/equipamento.png",
     name: "Lanterna Clínica",
     price: 45.90,
     rating: 4,
@@ -64,7 +64,7 @@ const equipamentos = [
   },
   {
     id: 408,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesEquipment/equipamento.png",
     name: "Martelo de Reflexo",
     price: 32.80,
     rating: 4,
@@ -72,7 +72,7 @@ const equipamentos = [
   },
   {
     id: 409,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesEquipment/equipamento.png",
     name: "Adipômetro",
     price: 148.50,
     rating: 5,
@@ -80,7 +80,23 @@ const equipamentos = [
   },
   {
     id: 410,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesEquipment/equipamento.png",
+    name: "Fita Métrica",
+    price: 15.75,
+    rating: 5,
+    category: "Equipamentos"
+  },
+  {
+    id: 411,
+    image: "/assets/imagesEquipment/equipamento.png",
+    name: "Adipômetro",
+    price: 148.50,
+    rating: 5,
+    category: "Equipamentos"
+  },
+  {
+    id: 412,
+    image: "/assets/imagesEquipment/equipamento.png",
     name: "Fita Métrica",
     price: 15.75,
     rating: 5,

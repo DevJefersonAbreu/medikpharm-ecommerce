@@ -112,6 +112,7 @@ export const ImageWrapper = styled.div`
 export const Image = styled.img`
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
 `;
 
 export const Indicators = styled.div`

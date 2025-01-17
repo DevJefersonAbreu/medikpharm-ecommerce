@@ -143,10 +143,10 @@ export default function Header() {
       </MainHeader>
 
       <MobileMenu $show={showMobileMenu}>
-        <MobileMenuItem href="/track-order">
-          <Truck size={20} />
-          Acompanhar Pedido
-        </MobileMenuItem>
+      <MobileMenuItem href="/track-order" style={{ textDecoration: 'none' }}>
+  <Truck size={20} />
+  Acompanhar Pedido
+</MobileMenuItem>
         <MobileMenuItem 
           href="https://www.google.com/maps/dir/?api=1&destination=Av.+Paulista,+1000+-+Bela+Vista,+São+Paulo+-+SP,+01310-100&travelmode=driving" 
           target="_blank" 

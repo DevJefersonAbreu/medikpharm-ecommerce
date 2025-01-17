@@ -8,7 +8,7 @@ import { useCart } from "@/components/contexts/cartContext";
 const dispositivos = [
   {
     id: 301,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesDevices/devices.png",
     name: "Medidor de Pressão Digital",
     price: 129.90,
     rating: 5,
@@ -16,7 +16,7 @@ const dispositivos = [
   },
   {
     id: 302,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesDevices/devices.png",
     name: "Glicosímetro",
     price: 89.50,
     rating: 4,
@@ -24,7 +24,7 @@ const dispositivos = [
   },
   {
     id: 303,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesDevices/devices.png",
     name: "Termômetro Infravermelho",
     price: 159.75,
     rating: 5,
@@ -32,7 +32,7 @@ const dispositivos = [
   },
   {
     id: 304,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesDevices/devices.png",
     name: "Nebulizador",
     price: 199.90,
     rating: 4,
@@ -40,7 +40,7 @@ const dispositivos = [
   },
   {
     id: 305,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesDevices/devices.png",
     name: "Oxímetro de Pulso",
     price: 79.60,
     rating: 5,
@@ -48,7 +48,7 @@ const dispositivos = [
   },
   {
     id: 306,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesDevices/devices.png",
     name: "Aparelho de Pressão Manual",
     price: 69.30,
     rating: 4,
@@ -56,7 +56,7 @@ const dispositivos = [
   },
   {
     id: 307,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesDevices/devices.png",
     name: "Balança Digital",
     price: 85.90,
     rating: 4,
@@ -64,7 +64,7 @@ const dispositivos = [
   },
   {
     id: 308,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesDevices/devices.png",
     name: "Medidor de Pico de Fluxo",
     price: 112.80,
     rating: 4,
@@ -72,7 +72,7 @@ const dispositivos = [
   },
   {
     id: 309,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesDevices/devices.png",
     name: "Tens Portátil",
     price: 248.50,
     rating: 5,
@@ -80,7 +80,23 @@ const dispositivos = [
   },
   {
     id: 310,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/assets/imagesDevices/devices.png",
+    name: "Inalador Ultrassônico",
+    price: 175.75,
+    rating: 5,
+    category: "Dispositivos"
+  },
+  {
+    id: 311,
+    image: "/assets/imagesDevices/devices.png",
+    name: "Tens Portátil",
+    price: 248.50,
+    rating: 5,
+    category: "Dispositivos"
+  },
+  {
+    id: 312,
+    image: "/assets/imagesDevices/devices.png",
     name: "Inalador Ultrassônico",
     price: 175.75,
     rating: 5,
